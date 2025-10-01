@@ -2,63 +2,75 @@
 
 body {
   font-family: sans-serif;
-  background: url("") no-repeat center center fixed;
+  background: url("https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251001_160841.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+#pesan-kontainer {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#karakter {
+  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#pesan-kontainer {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 600px;
-  height: 90vh;
-  padding: 1rem;
-  background: rgba(255,255,255,0.85);
-  border-radius: 0;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-#karakter {
-  text-align: center;
-  flex-shrink: 0;
-}
-
 #karak-gmbr {
-  width: 40%;
-  max-width: 200px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
   transition: all 0.3s ease;
 }
 
 #pesan {
-  flex: 1;
+  position: absolute;
   overflow-y: auto;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  max-height: 40%;
   padding: .5rem;
-  margin: 1rem 0;
-  background: #f9f9f9;
-  border-radius: 0;
+  margin: 0;
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px 10px 0 0;
   box-sizing: border-box;
 }
 
 #boks-masukkan {
   display: flex;
-  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   gap: .5rem;
+  padding: .5rem;
+  background: rgba(255,255,255,0.95);
+  border-top: 1px solid #ccc;
 }
 
   #masukkan-pengguna {
     flex: 1;
     padding: .5rem;
+    font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
   }
 
   #tmbl-kirim {
     padding: .5rem 1rem;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     background: #4a90e2;
