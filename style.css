@@ -34,6 +34,16 @@ body {
   transition: all 0.3s ease;
 }
 
+  #char-img.talking {
+    filter: drop-shadow(0 0 15px rgba(255,182,193,0.8));
+    animation: bounceTalk 0.6s infinite alternate;
+  }
+
+    @keyframes bounceTalk {
+      from { transform: scale(1); }
+      to { transform: scale(1.02); }
+    }
+
 #pesan {
   position: absolute;
   overflow-y: auto;
@@ -44,7 +54,7 @@ body {
   padding: .5rem;
   margin: 0;
   background: rgba(255,255,255,0.85);
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
   box-sizing: border-box;
 }
 
@@ -79,19 +89,56 @@ body {
   }
 
 .pesan {
-  padding: .5rem;
+  position: relative;
+  max-width: 80%;
+  padding: .5rem .8rem;
   margin: .5rem 0;
-  border-radius: 8px;
+  display: inline-block;
+  word-wrap: break-word;
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.5s ease;
 }
 
 .pengguna {
-  background: #d1e7ff;
+  margin-left: auto;
   text-align: right;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
 }
 
 .bot {
-  background: #ffe4e1;
+  margin-right: auto;
   text-align: left;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+  .user::after, .bot::after {
+    position: absolute;
+    width: 0; height: 0;
+    bottom: 0;
+    content: "";
+    border: 8px solid transparent;
+  }
+
+    .user::after {
+      right: -10px;
+      border-left-color: #c2e9fb;
+    }
+
+    .bot::after {
+      left: -10px;
+      border-right-color: #a6c1ee;
+    }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (max-width: 768px) {
