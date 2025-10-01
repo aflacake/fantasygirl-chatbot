@@ -26,7 +26,9 @@ export function setBerbicaraKarakter(berbicara) {
   const gmbr = document.getElementById("gmbr-karak");
   if (berbicara) {
     gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181044.png";
+    gmbr.classList.add("berbicara");
   } else {
     gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
+    gmbr.classList.add("berbicara");
   }
 }
