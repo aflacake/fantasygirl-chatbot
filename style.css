@@ -81,3 +81,65 @@ body {
   background: #ffe4e1;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  body {
+    align-items: stretch;
+  }
+
+  #pesan-kontainer {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #karakter {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gmbr-karak {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+  }
+
+  #pesan {
+    position: absolute;
+    overflow-y: auto;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    max-height: 40%;
+    margin: 0;
+    padding: .5rem;
+    background: rgba(255,255,255,0.85);
+    border-radius: 0;
+  }
+
+  #boks-masukkan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    background: rgba(255,255,255,0.95);
+    border-top: 1px solid #ccc;
+  }
+
+  #masukkan-pengguna {
+    font-size: 1rem;
+  }
+
+  #tmbl-kirim {
+    font-size: 1rem;
+  }
+}
