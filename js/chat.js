@@ -11,6 +11,6 @@ export function penagananPesanPengguna(teks) {
   setBerbicaraKarakter(true);
   setTimeout(() => {
     perlihatkanPesanBot(balasan);
-    setPembicaraKarakter(false);
+    setBerbicaraKarakter(false);
   }, 800);
 }
