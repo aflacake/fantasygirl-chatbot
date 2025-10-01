@@ -5,7 +5,7 @@ import { perlihatkanPesanPengguna, perlihatkanPesanBot, setBerbicaraKarakter } f
 export function penagananPesanPengguna(teks) {
   perlihatkanPesanPengguna(teks);
 
-  let balasan = "Aku belum pintar, tapi aku tahu kamu bicara: " + text;
+  let balasan = "Aku belum pintar, tapi aku tahu kamu bicara: " + teks;
 
   // Animasi bicara
   setPembicaraKarakter(true);
