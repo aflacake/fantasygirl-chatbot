@@ -1,0 +1,50 @@
+/* style.css */
+
+body {
+  font-family: sans-serif;
+  background: url("") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#pesan-kontainer {
+  max-width: 600px;
+  padding: 1rem;
+  margin: auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#karakter {
+  text-align: center;
+}
+
+#karak-gmbr {
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+#pesan {
+  height: 300px;
+  overflow-y: aut
+  padding: .5rem;o;
+  margin: 1rem 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.pesan {
+  padding: .5rem;
+  margin: .5rem 0;
+  border-radius: 8px;
+}
+
+.pengguna {
+  background: #d1e7ff;
+  text-align: right;
+}
+
+.bot {
+  background: #ffe4e1;
+  text-align: left;
+}
