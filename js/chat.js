@@ -8,7 +8,7 @@ export function penagananPesanPengguna(teks) {
   let balasan = "Aku belum pintar, tapi aku tahu kamu bicara: " + teks;
 
   // Animasi bicara
-  setPembicaraKarakter(true);
+  setBerbicaraKarakter(true);
   setTimeout(() => {
     perlihatkanPesanBot(balasan);
     setPembicaraKarakter(false);
