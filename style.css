@@ -121,12 +121,12 @@ body {
   }
 
     .pengguna::after {
-      right: -10px;
+      right: 0px;
       border-left-color: #c2e9fb;
     }
 
     .bot::after {
-      left: -10px;
+      left: 0px;
       border-right-color: #a6c1ee;
     }
 
