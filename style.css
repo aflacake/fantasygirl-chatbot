@@ -4,40 +4,67 @@ body {
   font-family: sans-serif;
   background: url("") no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#pesan-kontainerr {
+#pesan-kontainer {
   display: flex;
   flex-direction: column;
+  width: 90%;
   max-width: 600px;
-  height: 500px;
+  height: 90vh;
   padding: 1rem;
-  margin: auto;
   background: rgba(255,255,255,0.85);
-  border-radius: 15px;
+  border-radius: 0;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 #karakter {
   text-align: center;
+  flex-shrink: 0;
 }
 
 #karak-gmbr {
-  width: 200px;
+  width: 40%;
+  max-width: 200px;
   transition: all 0.3s ease;
 }
 
 #pesan {
   flex: 1;
-  min-height: 200px;
-  max-height: 300px;
   overflow-y: auto;
   padding: .5rem;
   margin: 1rem 0;
   background: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 0;
   box-sizing: border-box;
 }
+
+#boks-masukkan {
+  display: flex;
+  flex-shrink: 0;
+  gap: .5rem;
+}
+
+  #masukkan-pengguna {
+    flex: 1;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  #tmbl-kirim {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+  }
 
 .pesan {
   padding: .5rem;
