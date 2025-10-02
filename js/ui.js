@@ -13,13 +13,23 @@ export function perlihatkanPesanPengguna(teks) {
   boksPesan.scrollTop = boksPesan.scrollHeight;
 }
 
-export function perlihatkanPesanBot(teks) {
+export function perlihatkanPesanBot(teks, adalahPenting = false) {
   const boksPesan = document.getElementById("pesan");
   const psn = document.createElement("div");
   psn.className = "pesan bot";
   psn.innerText = teks;
   boksPesan.appendChild(psn);
   boksPesan.scrollTop = boksPesan.scrollHeight;
+
+  boksPesan.classList.add("active");
+
+  boksPesan.scrollTop = boksPesan.scrollHeight;
+
+  if (adalahPenting) {
+    const lines = document.getElementById("garis-kecepatan");
+    lines.classList.add("active");
+    setTimeout(() => lines.classList.remove("active"), 400);
+  }
 }
 
 export function setBerbicaraKarakter(berbicara) {
