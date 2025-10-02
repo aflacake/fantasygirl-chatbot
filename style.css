@@ -44,16 +44,23 @@ body {
       to { transform: scale(1.02); }
     }
 
+  #gmbr-karak.shake {
+    animation: charShake 0.4s ease-in-out;
+  }
+
+    @keyframes charShake {
+      0%   { transform: translate(0, 0) rotate(0); }
+      20%  { transform: translate(-5px, 0) rotate(-2deg); }
+      40%  { transform: translate(5px, 0) rotate(2deg); }
+      60%  { transform: translate(-5px, 0) rotate(-2deg); }
+      80%  { transform: translate(5px, 0) rotate(2deg); }
+      100% { transform: translate(0, 0) rotate(0); }
+    }
+
 #garis-kecepatan {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: repeating-linear-gradient(
-    to right,
-    transparent 0px,
-    transparent 20px,
-    rgba(255,255,255,0.7) 22px,
-    transparent 24px
-  );
+  background: url("https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251002_160555.png");
   background-size: 50px 100%;
   opacity: 0;
   pointer-events: none;
