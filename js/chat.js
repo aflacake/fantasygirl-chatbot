@@ -5,12 +5,20 @@ import { perlihatkanPesanPengguna, perlihatkanPesanBot, setBerbicaraKarakter } f
 export function penagananPesanPengguna(teks) {
   perlihatkanPesanPengguna(teks);
 
-  let balasan = "Aku belum pintar, tapi aku tahu kamu bicara: " + teks;
+  let balasan;
+  let penting = false;
+
+  if (text.toLowerCase().includes("kaget")) {
+    balasan = "EHHH?! 😱";
+    penting = true;
+  } else {
+    balasan = "Aku dengar kamu bilang: " + text;
+  }
 
   // Animasi bicara
   setBerbicaraKarakter(true);
   setTimeout(() => {
-    perlihatkanPesanBot(balasan);
+    perlihatkanPesanBot(balasan, penting);
     setBerbicaraKarakter(false);
   }, 800);
 }
