@@ -19,16 +19,22 @@ export function perlihatkanPesanBot(teks, adalahPenting = false) {
   psn.className = "pesan bot";
   psn.innerText = teks;
   boksPesan.appendChild(psn);
-  boksPesan.scrollTop = boksPesan.scrollHeight;
 
   boksPesan.classList.add("active");
 
   boksPesan.scrollTop = boksPesan.scrollHeight;
 
   if (adalahPenting) {
-    const lines = document.getElementById("garis-kecepatan");
-    lines.classList.add("active");
-    setTimeout(() => lines.classList.remove("active"), 400);
+    const garis = document.getElementById("garis-kecepatan");
+    const karak = document.getElementById("gmbr-karak");
+
+    garis.classList.add("active");
+    karak.classList.add("shake");
+
+    setTimeout(() => {
+      garis.classList.remove("active");
+      karak.classList.remove("shake");
+    }, 400);
   }
 }
 
