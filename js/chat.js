@@ -128,5 +128,5 @@ export function penagananPesanPengguna(teks) {
   setTimeout(() => {
     perlihatkanPesanBot(balasan, penting);
     setBerbicaraKarakter(false);
-  }, 2400);
+  }, 4000);
 }
