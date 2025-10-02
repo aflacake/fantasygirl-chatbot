@@ -8,7 +8,7 @@ export function penagananPesanPengguna(teks) {
   let balasan;
   let penting = false;
 
-  if (text.toLowerCase().includes("kaget")) {
+  if (teks.toLowerCase().includes("kaget")) {
     balasan = "EHHH?! 😱";
     penting = true;
   } else {
