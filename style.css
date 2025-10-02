@@ -78,11 +78,14 @@ body {
     }
 
 #pesan {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   overflow-y: auto;
   bottom: 60px;
   left: 0;
   right: 0;
+  gap: 0.5rem;
   max-height: 40%;
   padding: .5rem;
   margin: 0;
@@ -129,26 +132,26 @@ body {
 
 .pesan {
   position: relative;
-  max-width: 80%;
-  padding: .5rem .8rem;
+  max-width: 70%;
+  padding: .6rem .9rem;
   margin: .5rem 0;
   display: inline-block;
   word-wrap: break-word;
   border-radius: 0;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   animation: fadeInUp 0.5s ease;
 }
 
 .pengguna {
-  margin-left: auto;
-  text-align: right;
+  align-self: flex-end;
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border-bottom-right-radius: 2px;
 }
 
 .bot {
-  margin-right: auto;
-  text-align: left;
+  align-self: flex-start;
   background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  border-bottom-left-radius: 2px;
 }
 
   .pengguna::after, .bot::after {
@@ -160,13 +163,23 @@ body {
   }
 
     .pengguna::after {
-      right: -15px;
-      border-left-color: #c2e9fb;
+        position: absolute;
+        right: -8px;
+        bottom: 8px;
+        content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent transparent #c2e9fb;
     }
 
     .bot::after {
-      left: -15px;
-      border-right-color: #a6c1ee;
+      position: absolute;
+      left: -8px;
+      bottom: 8px;
+      content: "";
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent #a6c1ee transparent transparent;
     }
 
 @keyframes fadeInUp {
