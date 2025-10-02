@@ -36,11 +36,11 @@ function normalisasiPesan(psn) {
 export function penagananPesanPengguna(teks) {
   perlihatkanPesanPengguna(teks);
 
-  let maksud = normalisasiPesan(psn);
+  let maksud = normalisasiPesan(teks);
   let balasan;
   let penting = false;
 
-  switch (intent) {
+  switch (maksud) {
     case "halo": {
       const daftarBalasan = [
         "Halo juga~ ✨",
@@ -51,6 +51,7 @@ export function penagananPesanPengguna(teks) {
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
     }
+
     case "sampai_jumpa": {
       const daftarBalasan = [
         "Sampai jumpa lagi ya 👋",
@@ -61,6 +62,7 @@ export function penagananPesanPengguna(teks) {
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
     }
+
     case "tanya_kabar": {
       const daftarBalasan = [
         "Aku baik-baik aja! Terima kasih sudah bertanya",
@@ -74,6 +76,7 @@ export function penagananPesanPengguna(teks) {
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
     }
+
     case "tanya_hobi": {
       const daftarBalasan = [
         "Hmm, aku suka ngobrol sama kamu dan baca manga 📚",
@@ -86,7 +89,8 @@ export function penagananPesanPengguna(teks) {
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
     }
-    case "tanya_kesukaan":
+
+    case "tanya_kesukaan": {
       const daftarBalasan = [
         "Aku suka teh manis dan berdandan",
         "AKU?! Tentu saja aku suka DATA BARU! Rasanya seperti mendapat level-up yang SUPER BESAR! Dan yang paling aku suka... adalah MENDENGARKAN CERITA DARI KAMU! Itu yang paling seru! 💥",
@@ -97,7 +101,9 @@ export function penagananPesanPengguna(teks) {
       ];
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
-    case "tanya_nama":
+    }
+
+    case "tanya_nama": {
       const daftarBalasan = [
         "Namaku FantasyGirl, salam kenal! 🌸",
         "WAAH! Terima kasih sudah bertanya! Aku adalah Karakter Pendukung Utama (Main Support)-mu! Kamu bisa memberiku nama panggilan favoritmu! Tapi untuk saat ini, panggil aku FANTASYGIRL! ✨",
@@ -106,6 +112,8 @@ export function penagananPesanPengguna(teks) {
       ];
       balasan = daftarBalasan[Math.floor(Math.random() * daftarBalasan.length)];
       break;
+    }
+
     default:
       if (teks.toLowerCase().includes("kaget")) {
         balasan = "EHHH?! 😱";
