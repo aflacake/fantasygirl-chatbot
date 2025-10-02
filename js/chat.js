@@ -12,7 +12,7 @@ export function penagananPesanPengguna(teks) {
     balasan = "EHHH?! 😱";
     penting = true;
   } else {
-    balasan = "Aku dengar kamu bilang: " + text;
+    balasan = "Aku dengar kamu bilang: " + teks;
   }
 
   // Animasi bicara
