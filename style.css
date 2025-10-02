@@ -166,7 +166,7 @@ body {
 
     .bot::after {
       position: absolute;
-      left: 15px;
+      left: -15px;
       bottom: 8px;
       content: "";
       border-width: 8px;
