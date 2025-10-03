@@ -1,5 +1,9 @@
 // js/ui.js
 
+let ekspresiSekarang =
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
+let resetEkspresiWaktu = null;
+
 export function inisiasiUI() {
   // bisa nanti isi animasi masuk, dsb.
 }
@@ -21,7 +25,6 @@ export function perlihatkanPesanBot(teks, adalahPenting = false) {
   boksPesan.appendChild(psn);
 
   boksPesan.classList.add("active");
-
   boksPesan.scrollTop = boksPesan.scrollHeight;
 
   if (adalahPenting) {
@@ -40,21 +43,38 @@ export function perlihatkanPesanBot(teks, adalahPenting = false) {
 
 export function setBerbicaraKarakter(berbicara) {
   const gmbr = document.getElementById("gmbr-karak");
+  if (!gmbr) return;
+
   if (berbicara) {
-    gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png";
     gmbr.classList.add("berbicara");
   } else {
-    gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
-    gmbr.classList.add("berbicara");
+    gmbr.classList.remove("berbicara");
+  }
+
+  gmbr.src = ekspresiSekarang;
+}
+
+export function setEkspresiKarakter(url, autoReset = true, resetDelay = 5000) {
+  const avatar = document.getElementById("gmbr-karak");
+  if (!avatar) {
+    console.warn("Avatar tidak ditemukan!");
+    return;
+  }
+
+  ekspresiSekarang = url;
+  avatar.src = ekspresiSekarang;
+  console.log("Ekspresi berubah ke:", url);
+
+  if (autoReset && url !== ekspresiDefault) {
+    if (resetEkspresiTimer) clearTimeout(resetEkspresiTimer);
+
+    resetEkspresiTimer = setTimeout(() => {
+      ekspresiSekarang = ekspresiDefault;
+      avatar.src = ekspresiSekarang;
+      console.log("Ekspresi otomatis kembali ke default:", ekspresiDefault);
+    }, resetDelay);
   }
 }
 
-export function setEkspresiKarakter(url) {
-  const avatar = document.getElementById("gmbr-karak");
-  if (avatar) {
-    avatar.src = url;
-    console.log("Ekspresi berubah ke:", url);
-  } else {
-    console.warn("Avatar tidak ditemukan!");
-  }
-}
+const ekspresiDefault =
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
