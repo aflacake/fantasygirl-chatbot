@@ -177,14 +177,28 @@ export function penagananPesanPengguna(teks) {
       break;
     }
 
-    default:
+    default: {
       if (teks.toLowerCase().includes("kaget")) {
-        balasan = "EHHH?! 😱";
+        const responKaget = [
+          "EHHH?! 😱",
+          "Serius?! 🤯",
+          "Masa sih?! 😳",
+          "Hontou ni?! 😲",
+          "E-eh, beneran?! 😱💦"
+        ];
+        balasan = dapatkanBalasanAcak(responKaget);
         penting = true;
       } else {
-        balasan = "Aku dengar kamu bilang: " + teks;
+        const responBawaan = [
+          "Aku dengar kamu bilang: " + teks,
+          "Hmm... kamu barusan ngomong: " + teks + " ya?",
+          "Ooh, jadi maksudmu \"" + teks + "\"?",
+          "Eh, kamu serius ngomong \"" + teks + "\" barusan?",
+          "Hehe, aku tangkep kok: " + teks
+        ];
+        balasan = dapatkanBalasanAcak(responBawaan);
       }
-  }
+    }
 
   // Animasi bicara
   setBerbicaraKarakter(true);
