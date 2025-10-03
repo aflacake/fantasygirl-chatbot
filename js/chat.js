@@ -131,7 +131,9 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
       penting = true;
 
-      setEkspresiKarakter("https://github.com/aflacake/fantasygirl-chatbot/raw/main/assets/20251003_144558.png");
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
+);
       break;
     }
 
