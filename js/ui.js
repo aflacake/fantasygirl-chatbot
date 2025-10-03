@@ -34,14 +34,14 @@ export function perlihatkanPesanBot(teks, adalahPenting = false) {
     setTimeout(() => {
       garis.classList.remove("active");
       karak.classList.remove("shake");
-    }, 400);
+    }, 4000);
   }
 }
 
 export function setBerbicaraKarakter(berbicara) {
   const gmbr = document.getElementById("gmbr-karak");
   if (berbicara) {
-    gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181044.png";
+    gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png";
     gmbr.classList.add("berbicara");
   } else {
     gmbr.src = "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
