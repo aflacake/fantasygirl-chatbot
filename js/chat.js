@@ -7,13 +7,13 @@ const sinonim = {
     "halo", "hai", "hi", "halo kamu", "kamu halo", "halo fantasygirl"
   ],
   "sampai_jumpa": [
-    "bye", "dadah", "sampai jumpa", "see you", "goodbye"
+    "bye", "dadah", "sampai jumpa", "see you", "goodbye", "selamat tinggal"
   ],
   "tanya_kabar": [
-    "apa kabar", "gimana kabarmu", "kabarmu gimana", "lagi apa"
+    "apa kabar", "gimana kabarmu", "kabarmu gimana", "lagi apa", "bagaimana perasaanmu hari ini", "gimana harimu"
   ],
   "tanya_hobi": [
-    "apa hobimu", "hobimu apa", "kamu suka ngapain", "hobi kamu apa", "hobimu"
+    "apa hobimu", "hobimu apa", "kamu suka ngapain", "hobi kamu apa", "hobimu", "suka ngapain kalau senggang"
   ],
   "tanya_kesukaan": [
     "apa kesukaanmu", "kamu suka apa", "favoritmu apa", "apa yang kamu suka", "kesukaanmu apa"
