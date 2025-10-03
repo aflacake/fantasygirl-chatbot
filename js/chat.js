@@ -132,7 +132,7 @@ export function penagananPesanPengguna(teks) {
       penting = true;
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png?nocache=" + Date.now()
 );
       break;
     }
