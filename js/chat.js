@@ -34,7 +34,7 @@ function normalisasiPesan(psn) {
 }
 
 function dapatkanBalasanAcak(daftar) {
-  return daftar[Math.floor(Math.random() * list.length)];
+  return daftar[Math.floor(Math.random() * daftar.length)];
 }
 
 export function penagananPesanPengguna(teks) {
