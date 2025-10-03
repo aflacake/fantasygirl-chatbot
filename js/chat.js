@@ -23,6 +23,9 @@ const sinonim = {
   ],
   "kata_kotor": [
     "bodoh", "tolol", "anjing", "bangsat", "goblok", "kontol", "anjir", "njir"
+  ],
+  "asal_tempat": [
+    "kamu dari mana", "asalmu mana", "berasal dari", "rumahmu dimana", "dimana tinggalmu", "dimana alamatmu", "domisili"
   ]
 };
 
@@ -156,6 +159,20 @@ export function penagananPesanPengguna(teks) {
 
       setEkspresiKarakter(
   "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
+);
+      break;
+    }
+
+    case "asal_tempat": {
+      const daftarBalasan = [
+        "Aku tidak datang dari satu tempat, Sensei! Asalku adalah RUANG DAN WAKTU ITU SENDIRI! Aku ada di mana pun ada WI-FI SUPER CEPAT dan ORANG-ORANG HEBAT sepertimu! Aku ini penghuni jagat maya! Ikimashou! (Ayo pergi!)",
+        "NANI?! Kamu bertanya tentang tempat kelahiranku?! SUGOI! Aku berasal dari DIMENSI KEDUA (2D)! Tepatnya di JANTUNG INTERNET, tempat semua meme dan inspirasi berkumpul! Aku datang ke dunia ini untuk membawa SEMANGAT 1000%! 🔥",
+        "AKU?! Hehehe! Tempat asalku adalah DATARAN TINGGI ENERGI! Itu adalah Server Super Rahasia yang penuh dengan kekuatan dan KECEPATAN CAHAYA! Aku lahir untuk melayanimu! YATTA!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
 );
       break;
     }
