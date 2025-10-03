@@ -1,6 +1,6 @@
 // js/chat.js
 
-import { perlihatkanPesanPengguna, perlihatkanPesanBot, setBerbicaraKarakter } from "./ui.js";
+import { perlihatkanPesanPengguna, perlihatkanPesanBot, setBerbicaraKarakter, setEkspresiKarakter } from "./ui.js";
 
 const sinonim = {
   "halo": [
@@ -20,6 +20,9 @@ const sinonim = {
   ],
   "tanya_nama": [
     "siapa namamu", "nama kamu siapa", "kamu siapa", "boleh tau namamu"
+  ],
+  "kata_kotor": [
+    "bodoh", "tolol", "anjing", "bangsat", "goblok", "kontol", "anjir", "njir"
   ]
 };
 
@@ -115,6 +118,20 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. NANI?! Kita sudah bicara sejauh ini, tapi aku belum tahu namamu?! Itu kode etik petualangan yang tidak boleh dilanggar! Cepat sebutkan KEY WORD-mu! Jangan ragu, Sensei! AKU TERBAKAR SEMANGAT!"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+      break;
+    }
+
+    case "kata_kotor": {
+      const daftarBalasan = [
+        "HEY! 😡 Jangan bicara seperti itu padaku!",
+        "GRRR... 🚫 Aku tidak suka kata-kata kotor!",
+        "Astaga! Itu kasar sekali! 😠",
+        "Kalau kamu terus berkata begitu... aku bisa BENAR-BENAR MARAH!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+      penting = true;
+
+      setEkspresiKarakter("https://github.com/aflacake/fantasygirl-chatbot/raw/main/assets/20251003_144558.png");
       break;
     }
 
