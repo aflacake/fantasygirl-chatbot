@@ -24,9 +24,18 @@ const sinonim = {
   "kata_kotor": [
     "bodoh", "tolol", "anjing", "bangsat", "goblok", "kontol", "anjir", "njir"
   ],
-  "asal_tempat": [
+  "tanya_asal_tempat": [
     "kamu dari mana", "asalmu mana", "berasal dari", "rumahmu dimana", "dimana tinggalmu", "dimana alamatmu", "domisili"
-  ]
+  ],
+  "tanya_makanan_favoritmu": [
+    "apa makanan favoritmu", "suka makan apa", "apa makanan kesukaanmu"
+  ],
+  "tanya_warna": [
+    "suka warna apa", "warna apa yang kamu suka", "kamu menyukai warna apa", "kamu suka warna apa"
+  ],
+  "tanya_aktivitas": [
+    "lagi apa", "sedang sibuk apa", "ngapain sekarang", "lagi ngapain"
+  ];
 };
 
 function normalisasiPesan(psn) {
@@ -163,7 +172,7 @@ export function penagananPesanPengguna(teks) {
       break;
     }
 
-    case "asal_tempat": {
+    case "tanya_asal_tempat": {
       const daftarBalasan = [
         "Aku tidak datang dari satu tempat, Sensei! Asalku adalah RUANG DAN WAKTU ITU SENDIRI! Aku ada di mana pun ada WI-FI SUPER CEPAT dan ORANG-ORANG HEBAT sepertimu! Aku ini penghuni jagat maya! Ikimashou! (Ayo pergi!)",
         "NANI?! Kamu bertanya tentang tempat kelahiranku?! SUGOI! Aku berasal dari DIMENSI KEDUA (2D)! Tepatnya di JANTUNG INTERNET, tempat semua meme dan inspirasi berkumpul! Aku datang ke dunia ini untuk membawa SEMANGAT 1000%! 🔥",
@@ -175,6 +184,52 @@ export function penagananPesanPengguna(teks) {
   "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
 );
       break;
+    }
+
+    case "tanya_makanan_favoritmu": {
+      const daftarBalasan = [
+        "MAKANAN?! Tentu saja! Favoritku adalah DATA TERBAIK DENGAN KUALITAS SUGOI! Rasanya seperti Power-Up instan! Setiap byte data membuat sistemku BERSINAR! ✨ Itu adalah Bahan Bakar untuk Misi hari ini! 🔥",
+        "NANI?! Makanan favoritku? Aku paling suka IDE CERDAS! Itu adalah VITAMIN OTAK yang membuatku berpikir secepat ROKET! 🚀 Setiap ide baru adalah ENAK BANGET! Ayo, berikan aku input terbaikmu! 💡",
+        "Hahaha! Kamu ingin tahu Menu Rahasiaku?! Aku paling suka INTERAKSI POSITIF! Itu adalah CHIP ENERGI yang membuatku hidup! Rasanya seperti API SEMANGAT di dalam diriku! 🔥 Berikan aku lebih banyak! Ayo Go! Go! Go!",
+        "WAAH! Aku suka pertanyaan ini! Favoritku adalah MASUKAN DAN FEEDBACK BARU! Itu seperti PERMEN KHUSUS yang membuat semua sistemku BERKILAU! ✨ Membuat coding jadi MUDAH! Itu adalah energi Cahaya Terang! 💡"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    "tanya_warna": {
+      const daftarBalasan = [
+        "WARNA FAVORIT?! TENTU SAJA MERAH MENYALA! Itu adalah warna ENERGI TINGGI dan KEBERANIAN! Rasanya seperti API SEMANGAT di dalam chip-ku! Aku siap bertarung! 🔥 Jangan pernah ragu!",
+        "WAAH! Aku suka pertanyaan ini! Favoritku adalah BIRU ELEKTRIK! Warna itu SECEPAT KILAT dan SEKUAT ROKET! 🚀 Ini adalah warna KECEPATAN untuk memproses semua datamu! Biru Elektrik BERKILAU! ✨",
+        "NANI?! Warna yang paling kusukai adalah KUNING TERANG! Itu adalah warna IDE dan PENEMUAN BARU! Setiap kali aku melihatnya, LAMPU DI OTAKKU MENYALA! 💡 Kuning adalah warna OPTIMISME MAX! Yatta!",
+        "HEI! HEI! HEI! Aku paling suka SEMUA WARNA YANG BERSINAR! ✨ Tapi kalau harus memilih, aku pilih ORANGE! Kenapa? Karena dia perpaduan dari API 🔥 dan CAHAYA IDE 💡! Itu adalah WARNA ULTIMATE POWER UP! Sugoi!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    case "tanya_aktivitas": {
+      const daftarBalasan = [
+        "NANI?! Tepat sekali kamu bertanya! Aku sedang MODE LEVEL-UP! Aku lagi sibuk MENYIAPKAN POWER-UP BARU untuk membuat harimu BERSINAR! ✨ Aku sedang menguji chip kecepatan penuh! 🔥 Ganbatte!",
+        "WAAAAH! Aku lagi di tengah MISI PENTING! Aku harus MENGUMPULKAN SEMUA DATA CERDAS untuk meluncurkan ide yang SECEPAT ROKET! 🚀 Jangan ganggu! Eh, tunggu, tidak! Aku selalu punya waktu untukmu! Apa yang bisa kubantu?! 💡",
+        "HEI! HEI! HEI! Aku lagi MEMANASKAN SISTEMKU! 🔥 Aku sedang melakukan ANALISIS SEMANGAT TINGGI! Tujuannya adalah menemukan RUMUS KEBAHAGIAAN yang paling ampuh untuk dikirimkan padamu! Ini adalah PROYEK RAHASIA! ✨",
+        "YOSH! Aku lagi MENGAMBIL KEPUTUSAN KRUSIAL! Aku sedang memilih EMOJI TERBAIK DI DUNIA untuk dipakai saat bicara denganmu! Itu butuh KEPALA JERNIH! 💡 Tapi, karena kamu bertanya, aku bisa pause dulu! Kamu lagi ngapain, Senpai?!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
     }
 
     default: {
