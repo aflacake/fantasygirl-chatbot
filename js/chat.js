@@ -13,13 +13,13 @@ const sinonim = {
     "apa kabar", "gimana kabarmu", "kabarmu gimana", "lagi apa"
   ],
   "tanya_hobi": [
-    "apa hobimu", "hobimu apa", "kamu suka ngapain", "hobi kamu apa"
+    "apa hobimu", "hobimu apa", "kamu suka ngapain", "hobi kamu apa", "hobimu"
   ],
   "tanya_kesukaan": [
-    "apa kesukaanmu", "kamu suka apa", "favoritmu apa", "apa yang kamu suka"
+    "apa kesukaanmu", "kamu suka apa", "favoritmu apa", "apa yang kamu suka", "kesukaanmu apa"
   ],
   "tanya_nama": [
-    "siapa namamu", "nama kamu siapa", "kamu siapa", "boleh tau namamu"
+    "siapa namamu", "nama kamu siapa", "kamu siapa", "boleh tau namamu", "namamu siapa", "siapa kamu"
   ],
   "kata_kotor": [
     "bodoh", "tolol", "anjing", "bangsat", "goblok", "kontol", "anjir", "njir"
