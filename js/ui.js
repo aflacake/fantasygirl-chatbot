@@ -48,3 +48,9 @@ export function setBerbicaraKarakter(berbicara) {
     gmbr.classList.add("berbicara");
   }
 }
+
+export function setEkspresiKarakter(url) {
+  const avatar = document.querySelector("gmbr-karak");
+  if (avatar) avatar.src = url;
+}
+
