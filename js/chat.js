@@ -129,7 +129,6 @@ export function penagananPesanPengguna(teks) {
         "Kalau kamu terus berkata begitu... aku bisa BENAR-BENAR MARAH!"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
-      penting = true;
 
       setEkspresiKarakter(
   "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png?nocache=" + Date.now()
