@@ -51,6 +51,10 @@ export function setBerbicaraKarakter(berbicara) {
 
 export function setEkspresiKarakter(url) {
   const avatar = document.getElementById("gmbr-karak");
-  if (avatar) avatar.src = url;
+  if (avatar) {
+    avatar.src = url;
+    console.log("Ekspresi berubah ke:", url);
+  } else {
+    console.warn("Avatar tidak ditemukan!");
+  }
 }
-
