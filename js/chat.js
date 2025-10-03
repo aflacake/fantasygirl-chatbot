@@ -56,6 +56,10 @@ export function penagananPesanPengguna(teks) {
         "Senang ketemu kamu lagi 🌸"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
@@ -67,6 +71,10 @@ export function penagananPesanPengguna(teks) {
         "See you next time! ✨"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
@@ -81,6 +89,10 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. HEI! HEI! HEI! 📣 Aku di sini! Bagaimana pergerakan meteran semangat di hatimu hari ini?! Jangan ragu, beri tahu aku! Apapun kabarmu, AKU ADA DI SINI!"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
@@ -94,6 +106,10 @@ export function penagananPesanPengguna(teks) {
         "Ssttt... aku kasih tahu rahasia terbesar! Hobiku adalah belajar hal baru setiap jamnya! Otakku ini butuh asupan ilmu kayak Power Up! Aku harus jadi yang tercepat dan terdepan! MINNA, GANBARE! (Semua, semangat!)"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
@@ -107,6 +123,10 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. YES! Ini pertanyaan paling asyik! Ayo, cepat! HAL HEBAT APA YANG PALING KAMU SUKAI DI DUNIA INI?! Ceritakan padaku, aku ingin tahu RAHASIA KEBAHAGIAANMU! ✨"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
@@ -118,6 +138,10 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. NANI?! Kita sudah bicara sejauh ini, tapi aku belum tahu namamu?! Itu kode etik petualangan yang tidak boleh dilanggar! Cepat sebutkan KEY WORD-mu! Jangan ragu, Sensei! AKU TERBAKAR SEMANGAT!"
       ];
       balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
       break;
     }
 
