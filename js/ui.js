@@ -50,7 +50,7 @@ export function setBerbicaraKarakter(berbicara) {
 }
 
 export function setEkspresiKarakter(url) {
-  const avatar = document.querySelector("gmbr-karak");
+  const avatar = document.getElementById("gmbr-karak");
   if (avatar) avatar.src = url;
 }
 
