@@ -2,6 +2,8 @@
 
 let ekspresiSekarang =
   "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
+const ekspresiBawaan =
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
 let resetEkspresiWaktu = null;
 
 export function inisiasiUI() {
@@ -65,16 +67,13 @@ export function setEkspresiKarakter(url, autoReset = true, resetDelay = 5000) {
   avatar.src = ekspresiSekarang;
   console.log("Ekspresi berubah ke:", url);
 
-  if (autoReset && url !== ekspresiDefault) {
-    if (resetEkspresiTimer) clearTimeout(resetEkspresiTimer);
+  if (autoMengaturUlang && url !== ekspresiBawaan) {
+    if (resetEkspresiWaktu) clearTimeout(resetEkspresiWaktu);
 
-    resetEkspresiTimer = setTimeout(() => {
-      ekspresiSekarang = ekspresiDefault;
+    resetEkspresiWaktu = setTimeout(() => {
+      ekspresiSekarang = ekspresiBawaan;
       avatar.src = ekspresiSekarang;
-      console.log("Ekspresi otomatis kembali ke default:", ekspresiDefault);
+      console.log("Ekspresi otomatis kembali ke bawaan:", ekspresiBawaan);
     }, resetDelay);
   }
 }
-
-const ekspresiDefault =
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20250930_181055.png";
