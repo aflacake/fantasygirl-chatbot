@@ -56,7 +56,7 @@ export function setBerbicaraKarakter(berbicara) {
   gmbr.src = ekspresiSekarang;
 }
 
-export function setEkspresiKarakter(url, autoReset = true, resetDelay = 5000) {
+export function setEkspresiKarakter(url, otomatisMengaturUlang = true, resetDelay = 5000) {
   const avatar = document.getElementById("gmbr-karak");
   if (!avatar) {
     console.warn("Avatar tidak ditemukan!");
@@ -67,7 +67,7 @@ export function setEkspresiKarakter(url, autoReset = true, resetDelay = 5000) {
   avatar.src = ekspresiSekarang;
   console.log("Ekspresi berubah ke:", url);
 
-  if (autoMengaturUlang && url !== ekspresiBawaan) {
+  if (otomatisMengaturUlang && url !== ekspresiBawaan) {
     if (resetEkspresiWaktu) clearTimeout(resetEkspresiWaktu);
 
     resetEkspresiWaktu = setTimeout(() => {
