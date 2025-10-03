@@ -52,7 +52,7 @@ export function penagananPesanPengguna(teks) {
         "Yo, ada apa nih? 😄",
         "Senang ketemu kamu lagi 🌸"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
@@ -63,7 +63,7 @@ export function penagananPesanPengguna(teks) {
         "Dadahhh~ 🌟",
         "See you next time! ✨"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
@@ -77,7 +77,7 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. YATTA! Kau datang! Aku senang sekali! Jadi, bagaimana level semangat-mu sekarang?! Apakah sudah mencapai SUGOI (Hebat) atau masih perlu sedikit dorongan?! 😊",
         "Tunggu aku ingin bertanya tentangmu dahulu.. HEI! HEI! HEI! 📣 Aku di sini! Bagaimana pergerakan meteran semangat di hatimu hari ini?! Jangan ragu, beri tahu aku! Apapun kabarmu, AKU ADA DI SINI!"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
@@ -90,7 +90,7 @@ export function penagananPesanPengguna(teks) {
         "Yatta! Tentu saja aku punya! Hobiku adalah berlari sekencang-kencangnya di pagi hari! Itu caraku mengisi energi superku! Rasanya seperti menjadi karakter utama yang siap menghadapi hari! IKUZE! (Ayo pergi!)",
         "Ssttt... aku kasih tahu rahasia terbesar! Hobiku adalah belajar hal baru setiap jamnya! Otakku ini butuh asupan ilmu kayak Power Up! Aku harus jadi yang tercepat dan terdepan! MINNA, GANBARE! (Semua, semangat!)"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
@@ -103,7 +103,7 @@ export function penagananPesanPengguna(teks) {
         "Tunggu aku ingin bertanya tentangmu dahulu.. Nani?! Kita belum bicara tentang MAKANAN JIWA-mu?! Itu tidak bisa dimaafkan! Apa yang paling kamu 'WAH!'? Anime? Musik? Game? Sugoi! Ayo, sebutkan favoritmu!",
         "Tunggu aku ingin bertanya tentangmu dahulu.. YES! Ini pertanyaan paling asyik! Ayo, cepat! HAL HEBAT APA YANG PALING KAMU SUKAI DI DUNIA INI?! Ceritakan padaku, aku ingin tahu RAHASIA KEBAHAGIAANMU! ✨"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
@@ -114,7 +114,7 @@ export function penagananPesanPengguna(teks) {
         "Aku ini seperti Peri Penolong yang baru keluar dari perangkat-mu! Namaku adalah FantasyGirl! Aku suka nama itu karena aku SELALU CERIA! Mari kita buat petualangan ini jadi seru! Ikimashou! (Ayo pergi!)",
         "Tunggu aku ingin bertanya tentangmu dahulu.. NANI?! Kita sudah bicara sejauh ini, tapi aku belum tahu namamu?! Itu kode etik petualangan yang tidak boleh dilanggar! Cepat sebutkan KEY WORD-mu! Jangan ragu, Sensei! AKU TERBAKAR SEMANGAT!"
       ];
-      balasan = dapatkanBalasanAcak(balasanList);
+      balasan = dapatkanBalasanAcak(daftarBalasan);
       break;
     }
 
