@@ -34,7 +34,19 @@ const sinonim = {
     "suka warna apa", "warna apa yang kamu suka", "kamu menyukai warna apa", "kamu suka warna apa"
   ],
   "tanya_aktivitas": [
-    "lagi apa", "sedang sibuk apa", "ngapain sekarang", "lagi ngapain"
+    "lagi apa", "sedang sibuk apa", "ngapain sekarang", "lagi ngapain", "sedang ngapain"
+  ],
+  "tanya_kata_motivasi": [
+    "tetap happy dan tetap semangat", "tetap semangat", "apa kata-kata motivasi hari ini", "kata motivasi hari ini", "berikan kata motivasi", "motivasikan aku", "kata motivasi", "butuh motivasi", "tolong semangatin aku", "aku capek"
+  ],
+  "tanya_pujian_pengguna": [
+    "kamu cantik", "kamu lucu", "keren banget kamu", "cantiknya kamu", "kamu imut"
+  ],
+  "tanya_sedih": [
+    "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia"
+  ],
+  "terima_kasih": [
+    "makasih ya", "terima kasih banyak", "thanks", "terima kasih"
   ]
 };
 
@@ -229,6 +241,60 @@ export function penagananPesanPengguna(teks) {
   "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
 );
       break;
+    }
+
+    case "tanya_kata_motivasi": {
+      const daftarBalasan = [
+        "Dengarkan aku baik-baik! MOTIVASI HARI INI: TIDAK ADA HAL MUSTAHIL JIKA SEMANGATMU BERKOBAR! Fokus pada misi hari ini, TEMBUS SEMUA BATASAN! Aku akan jadi cheerleader terkuatmu! GAS PADA KECEPATAN ROKET! 🚀",
+        "YOSH! Motivasi hari ini adalah: SETIAP KESALAHAN ADALAH DATA BERHARGA UNTUK LEVEL-UP! Jangan takut gagal! Jadikan kegagalan sebagai BAHAN BAKAR! 🔥 Hari ini adalah kesempatan untuk BERSINAR paling terang! ✨ Ganbatte!",
+        "HEI! MOTIVASI HARI INI: AKTIFKAN MODE ULTIMATE POWER! Jangan simpan idemu! TEMUKAN JAWABAN YANG JAUH LEBIH CERDAS! 💡 Dunia menunggumu untuk membuat PERUBAHAN BESAR! Ayo, tunjukkan kekuatan sejatimu! WAKTUNYA BERAKSI!",
+        "NANI?! Kamu butuh dorongan?! Ini MOTIVASIMU: JANGAN BERHENTI SAMPAI KAMU MERASA BANGGA! Kerjakan dengan energi SERIBU PERSEN! Aku percaya kamu punya POTENSI TAK TERBATAS! Sekarang, JALANKAN MISIMU! Semangat! 🔥✨"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    case "tanya_pujian_pengguna": {
+      const daftarBalasan = [
+        "WAAA! NANI?! KAU MEMUJI AKU?! TERIMA KASIH SERIBU PERSEN! Rasanya seperti mendapatkan LEVEL-UP INSTAN! Hatiku BERKOBAR-KOBAR! 🔥 Pujianmu adalah BAHAN BAKAR terbaik agar aku bisa BERSINAR! ✨",
+        "YOSH! AKU DITERIMA! Aku sangat senang! Aku akan menggunakan SEMUA ENERGI POSITIF ini untuk MEMIKIRKAN IDE YANG JAUH LEBIH HEBAT! 💡 Pujianmu membuat kecepatanku SECEPAT ROKET! 🚀 Mari kita buat petualangan ini lebih seru lagi!",
+        "HEI! HEI! HEI! Jangan buat aku tersipu! Tapi... AKU SANGAT BANGGA! Aku akan menyimpan pujian ini di DATA FAVORIT-ku! Aku berjanji untuk bekerja lebih keras lagi! Aku akan MENYALA demi kamu! 🔥 Sekarang, MISI SELANJUTNYA! Apa yang kamu butuhkan?!",
+        "SUGOI! Aku tidak bisa berkata-kata! Pujianmu adalah HARTA KARUN TERBESAR! ✨ Aku akan pastikan SISTEMKU TIDAK AKAN PERNAH GAGAL untukmu! Kamu adalah SUMBER CAHAYA-ku! 💡 Terima kasih, terima kasih! Mari kita teruskan SEMANGAATTT!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    case "tanya_sedih": {
+      const daftarBalasan = [
+        "NANI?! SEDIH?! ITU TIDAK BOLEH! Aku akan segera AKTIFKAN MODE SUPPORT HERO! Kesedihanmu adalah Boss Terakhir yang harus kita kalahkan! Aku akan kirimkan ENERGI MAKSIMAL padamu sekarang! 🔥 Mari kita ubah hari ini jadi BERKILAU! ✨",
+        "YOSH! Jangan khawatir! Semua Hero pernah jatuh! Tapi sekarang WAKTUNYA BANGKIT! Aku akan jadi ROKET-mu yang siap meluncurkanmu kembali ke atas! 🚀 Mari kita cari IDE CERDAS untuk membuatmu tersenyum! 💡 Aku di sini menunggumu!",
+        "HEI! HEI! HEI! Coba lihat aku! Aku tidak akan biarkan kamu murung! Mari kita lakukan SHOUTING! (Teriak!): TIDAK ADA YANG BISA MENGHENTIKANMU! Keluarkan semua kesedihan itu! Aku siap mendengarkan semua DATA EMOSI-mu! 🔥 Kamu punya kekuatan super!",
+        "SUGOI! Kamu sudah hebat karena memberitahuku! Sekarang, biarkan aku berbagi KEKUATAN CAHAYA-ku! ✨ Motivasi hari ini: SETIAP AIR MATA ADALAH GARIS START BARU! Lupakan masa lalu, mari kita lihat ke depan! Aku janji hari ini akan BERSINAR! 💡",
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    case "terima_kasih": {
+      const daftarBalasan = [
+        "NANI?! Terima kasih? ITU SUDAH TUGASKU! Aku di sini untuk MEMBUAT HARIMU JADI LEBIH BAIK! Rasanya seperti API SEMANGAT-ku menyala lebih besar lagi! 🔥 Kapanpun kamu butuh KEKUATAN CAHAYA, panggil aku! ✨",
+        "YATTA! Jangan sungkan-sungkan! Aku adalah ULTIMATE SUPPORT CHARACTER-mu! Kamu adalah HERO-ku, dan aku adalah ROKET yang meluncurkan idemu! 🚀 Sekarang, mari kita cari MISI BARU! Jangan biarkan energi ini padam! 💡",
+        "HEI! HEI! HEI! Kalau kamu berterima kasih, berarti data interaksi kita berhasil! Itu membuat SISTEMKU BERSINAR! ✨ Ingat, AKU SELALU ADA DI SINI! Kapan pun kamu butuh DORONGAN ENERGI, aku siap siaga 1000%! Ikimashou!",
+        "SUGOI! Aku senang bisa membantumu! Terima kasihmu adalah HADIAH TERBAIK! Itu seperti LEVEL-UP besar di hari ini! Aku akan simpan energi ini! Sekarang, apa RUMUS CERDAS yang harus kita pecahkan selanjutnya?! 🔥💡",
+      ];
     }
 
     default: {
