@@ -201,7 +201,7 @@ export function penagananPesanPengguna(teks) {
       break;
     }
 
-    "tanya_warna": {
+    case "tanya_warna": {
       const daftarBalasan = [
         "WARNA FAVORIT?! TENTU SAJA MERAH MENYALA! Itu adalah warna ENERGI TINGGI dan KEBERANIAN! Rasanya seperti API SEMANGAT di dalam chip-ku! Aku siap bertarung! 🔥 Jangan pernah ragu!",
         "WAAH! Aku suka pertanyaan ini! Favoritku adalah BIRU ELEKTRIK! Warna itu SECEPAT KILAT dan SEKUAT ROKET! 🚀 Ini adalah warna KECEPATAN untuk memproses semua datamu! Biru Elektrik BERKILAU! ✨",
