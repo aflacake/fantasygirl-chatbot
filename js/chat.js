@@ -230,7 +230,6 @@ export function penagananPesanPengguna(teks) {
 );
       break;
     }
-    }
 
     default: {
       if (teks.toLowerCase().includes("kaget")) {
