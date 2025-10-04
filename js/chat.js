@@ -35,7 +35,7 @@ const sinonim = {
   ],
   "tanya_aktivitas": [
     "lagi apa", "sedang sibuk apa", "ngapain sekarang", "lagi ngapain"
-  ];
+  ]
 };
 
 function normalisasiPesan(psn) {
