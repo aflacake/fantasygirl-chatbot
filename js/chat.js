@@ -43,7 +43,7 @@ const sinonim = {
     "kamu cantik", "kamu lucu", "keren banget kamu", "cantiknya kamu", "kamu imut"
   ],
   "tanya_sedih": [
-    "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia"
+    "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia", "aku sedih"
   ],
   "terima_kasih": [
     "makasih ya", "terima kasih banyak", "thanks", "terima kasih"
