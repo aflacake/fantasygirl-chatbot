@@ -253,6 +253,7 @@ export function penagananPesanPengguna(teks) {
         balasan = dapatkanBalasanAcak(responBawaan);
       }
     }
+  }
 
   // Animasi bicara
   setBerbicaraKarakter(true);
