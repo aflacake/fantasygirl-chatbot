@@ -18,10 +18,10 @@ export function mulaiSakura() {
     const kelopak = document.createElement("div");
     kelopak.classList.add("sakura");
 
-    kelopak.style.left = Math.random() * 50 + "vw";
+    kelopak.style.left = Math.random() * 90 + "vw";
     kelopak.style.animationDuration = 6 + Math.random() * 5 + "s";
     kelopak.style.animationDelay = Math.random() * 3 + "s";
-    kelopak.style.width = kelopak.style.height = 20 + Math.random() * 20 + "px";
+    kelopak.style.width = kelopak.style.height = 10 + Math.random() * 10 + "px";
 
     wadah.appendChild(kelopak);
 
