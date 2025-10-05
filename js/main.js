@@ -1,10 +1,11 @@
 // js/main.js
 
-import { inisiasiUI, perlihatkanPesanBot } from "./ui.js";
+import { inisiasiUI, mulaiSakura, perlihatkanPesanBot } from "./ui.js";
 import { penagananPesanPengguna } from "./chat.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   inisiasiUI();
+  mulaiSakura();
 
   const masukkan = document.getElementById("masukkan-pengguna");
   const kirimTmbl = document.getElementById("tmbl-kirim");
