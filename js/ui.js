@@ -10,6 +10,27 @@ export function inisiasiUI() {
   // bisa nanti isi animasi masuk, dsb.
 }
 
+export function mulaiSakura() {
+  const wadah = document.getElementById("sakura-kontainer");
+  if (!wadah) return;
+
+  function buatSatuKelopak() {
+    const kelopak = document.createElement("div");
+    kelopak.classList.add("sakura");
+
+    kelopak.style.left = Math.random() * 100 + "vw";
+    kelopak.style.animationDuration = 6 + Math.random() * 5 + "s";
+    kelopak.style.animationDelay = Math.random() * 3 + "s";
+    kelopak.style.width = kelopak.style.height = 20 + Math.random() * 20 + "px";
+
+    wadah.appendChild(kelopak);
+
+    setTimeout(() => kelopak.remove(), 11000);
+  }
+
+  setInterval(buatSatuKelopak, 600);
+}
+
 export function perlihatkanPesanPengguna(teks) {
   const boksPesan = document.getElementById("pesan");
   const psn = document.createElement("div");
@@ -76,25 +97,4 @@ export function setEkspresiKarakter(url, otomatisMengaturUlang = true, resetDela
       console.log("Ekspresi otomatis kembali ke bawaan:", ekspresiBawaan);
     }, resetDelay);
   }
-}
-
-export function mulaiSakura() {
-  const wadah = document.getElementById("sakura-kontainer");
-  if (!wadah) return;
-
-  function buatSatuKelopak() {
-    const kelopak = document.createElement("div");
-    kelopak.classList.add("sakura");
-
-    kelopak.style.left = Math.random() * 100 + "vw";
-    kelopak.style.animationDuration = 6 + Math.random() * 5 + "s";
-    kelopak.style.animationDelay = Math.random() * 3 + "s";
-    kelopak.style.width = kelopak.style.height = 20 + Math.random() * 20 + "px";
-
-    wadah.appendChild(kelopak);
-
-    setTimeout(() => kelopak.remove(), 11000);
-  }
-
-  setInterval(buatSatuKelopak, 600);
 }
