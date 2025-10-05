@@ -85,7 +85,7 @@ export function setEkspresiKarakter(url, otomatisMengaturUlang = true, resetDela
   }
 
   ekspresiSekarang = url;
-  avatar.src = ekspresiSekarang;
+  avatar.src = `${ekspresiSekarang}?v=${Date.now()}`;
   console.log("Ekspresi berubah ke:", url);
 
   if (otomatisMengaturUlang && url !== ekspresiBawaan) {
