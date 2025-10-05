@@ -292,7 +292,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png",
+        false
       );
       break;
     }
@@ -324,7 +325,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png",
+        false
       );
       break;
     }
