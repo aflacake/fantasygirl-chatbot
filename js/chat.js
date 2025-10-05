@@ -46,7 +46,7 @@ const sinonim = {
     "aku lagi senang", "aku senang", "aku happy", "bahagia aku", "aku bahagia", "aku gembira", "aku ceria"
   ],
   "tanya_sedih": [
-    "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia", "aku sedih"
+    "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia", "aku sedih", "aku tidak senang"
   ],
   "terima_kasih": [
     "makasih ya", "terima kasih banyak", "thanks", "terima kasih"
@@ -55,7 +55,7 @@ const sinonim = {
     "aku merasa kesepian", "aku bingung", "aku stres", "aku mau curhat", "aku ingin curhat", "aku mau curhat sama kamu", "aku ingin curhat sama kamu"
   ],
   "tanya_validasi_diri": [
-    "menurutmu aku gimana", "aku ini orangnya bagaimana", "menurutmu aku seperti apa", "seperti apakah aku", "aku ini orangnya seperti bagaimana"
+    "menurutmu aku gimana", "aku ini orangnya bagaimana", "menurutmu aku seperti apa", "seperti apakah aku", "aku ini orangnya seperti bagaimana", "aku bagaimana orangnya"
   ]
 };
 
