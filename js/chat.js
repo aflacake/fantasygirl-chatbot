@@ -91,8 +91,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -106,8 +106,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -124,8 +124,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -141,8 +141,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -158,8 +158,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -173,8 +173,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -188,8 +188,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
+      );
       break;
     }
 
@@ -202,8 +202,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -217,8 +217,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -232,8 +232,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -247,8 +247,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -262,8 +262,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -277,8 +277,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -292,8 +292,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+      );
       break;
     }
 
@@ -307,8 +307,10 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251004_190652.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251004_190652.png?v=" + Date.now(),
+        false
+      );
+
       break;
     }
 
@@ -322,8 +324,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+      );
       break;
     }
 
@@ -337,8 +339,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
@@ -352,8 +354,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
-);
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
       break;
     }
 
