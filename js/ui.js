@@ -21,7 +21,7 @@ export function mulaiSakura() {
     kelopak.style.left = Math.random() * 90 + "vw";
     kelopak.style.animationDuration = 6 + Math.random() * 5 + "s";
     kelopak.style.animationDelay = Math.random() * 3 + "s";
-    kelopak.style.width = kelopak.style.height = 10 + Math.random() * 10 + "px";
+    kelopak.style.width = kelopak.style.height = 25 + Math.random() * 25 + "px";
 
     wadah.appendChild(kelopak);
 
