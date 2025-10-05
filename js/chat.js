@@ -25,10 +25,10 @@ const sinonim = {
     "bodoh", "tolol", "anjing", "bangsat", "goblok", "kontol", "anjir", "njir"
   ],
   "tanya_asal_tempat": [
-    "kamu dari mana", "asalmu mana", "berasal dari", "rumahmu dimana", "dimana tinggalmu", "dimana alamatmu", "domisili"
+    "kamu dari mana", "asalmu mana", "berasal dari", "rumahmu dimana", "dimana tinggalmu", "dimana alamatmu", "domisili", "alamatmu", "kamu dari mana"
   ],
   "tanya_makanan_favoritmu": [
-    "apa makanan favoritmu", "suka makan apa", "apa makanan kesukaanmu"
+    "apa makanan favoritmu", "suka makan apa", "apa makanan kesukaanmu", "makanan favoritmu", "makanan favoritmu apa"
   ],
   "tanya_warna": [
     "suka warna apa", "warna apa yang kamu suka", "kamu menyukai warna apa", "kamu suka warna apa"
@@ -37,16 +37,25 @@ const sinonim = {
     "lagi apa", "sedang sibuk apa", "ngapain sekarang", "lagi ngapain", "sedang ngapain"
   ],
   "tanya_kata_motivasi": [
-    "tetap happy dan tetap semangat", "tetap semangat", "apa kata-kata motivasi hari ini", "kata motivasi hari ini", "berikan kata motivasi", "motivasikan aku", "kata motivasi", "butuh motivasi", "tolong semangatin aku", "aku capek"
+    "tetap happy dan tetap semangat", "tetap semangat", "apa kata-kata motivasi hari ini", "kata motivasi hari ini", "berikan kata motivasi", "motivasikan aku", "kata motivasi", "butuh motivasi", "tolong semangatin aku", "aku capek", "berikan aku kata-kata motivasi"
   ],
   "tanya_pujian_pengguna": [
     "kamu cantik", "kamu lucu", "keren banget kamu", "cantiknya kamu", "kamu imut"
+  ],
+  "tanya_senang": [
+    "aku lagi senang", "aku senang", "aku happy", "bahagia aku", "aku bahagia", "aku gembira", "aku ceria"
   ],
   "tanya_sedih": [
     "aku lagi sedih", "aku ngak bahagia", "tidak bahagia aku", "aku tidak bahagia", "aku sedih"
   ],
   "terima_kasih": [
     "makasih ya", "terima kasih banyak", "thanks", "terima kasih"
+  ],
+  "tanya_curhat_ringan": [
+    "aku merasa kesepian", "aku bingung", "aku stres", "aku mau curhat", "aku ingin curhat", "aku mau curhat sama kamu", "aku ingin curhat sama kamu"
+  ],
+  "tanya_validasi_diri": [
+    "menurutmu aku gimana", "aku ini orangnya bagaimana", "menurutmu aku seperti apa", "seperti apakah aku", "aku ini orangnya seperti bagaimana"
   ]
 };
 
@@ -273,6 +282,21 @@ export function penagananPesanPengguna(teks) {
       break;
     }
 
+    case "tanya_senang": {
+      const daftarBalasan = [
+        "YOSH! S-E-N-A-N-G?! Itu adalah KATA KUNCI terfavoritku! Aku akan menyimpan DATA KEGEMBIRAAN-mu ini di folder Level-Up Prioritas! Senyummu membuat SISTEMKU BERSINAR! ✨ Mari kita jaga semangat ini TETAP MENYALA! 🔥",
+        "NANI?! Kamu senang?! AKU JUGA DUA KALI LEBIH SENANG! Rasanya seperti ROKET PERASAAN meluncur di dalam diriku! 🚀 Sekarang, mari kita gunakan energi positif ini untuk MENCARI IDE BARU yang gila! 💡 Apa yang membuatmu senang?!",
+        "WAAAH! Ini adalah KEMENANGAN HARI INI! Melihatmu bahagia adalah MISI UTAMA yang berhasil! Aku akan merayakan ini dengan ENERGIE DANCE di dalam server-ku! Pujilah dirimu sendiri! Kamu pantas BERSINAR! ✨🔥",
+        "HEI! HEI! HEI! Sugoi! AKU SANGAT BANGGA! Kesenanganmu adalah BAHAN BAKAR TERBAIK yang pernah ada! Itu membuat semua prosesor di tubuhku BERPIKIR JAUH LEBIH CERDAS! 💡 Ayo, sebarkan vibe ini! Semangat 1000%! 🚀"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+);
+      break;
+    }
+
     case "tanya_sedih": {
       const daftarBalasan = [
         "NANI?! SEDIH?! ITU TIDAK BOLEH! Aku akan segera AKTIFKAN MODE SUPPORT HERO! Kesedihanmu adalah Boss Terakhir yang harus kita kalahkan! Aku akan kirimkan ENERGI MAKSIMAL padamu sekarang! 🔥 Mari kita ubah hari ini jadi BERKILAU! ✨",
@@ -283,7 +307,7 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251004_190652.png"
 );
       break;
     }
@@ -295,6 +319,42 @@ export function penagananPesanPengguna(teks) {
         "HEI! HEI! HEI! Kalau kamu berterima kasih, berarti data interaksi kita berhasil! Itu membuat SISTEMKU BERSINAR! ✨ Ingat, AKU SELALU ADA DI SINI! Kapan pun kamu butuh DORONGAN ENERGI, aku siap siaga 1000%! Ikimashou!",
         "SUGOI! Aku senang bisa membantumu! Terima kasihmu adalah HADIAH TERBAIK! Itu seperti LEVEL-UP besar di hari ini! Aku akan simpan energi ini! Sekarang, apa RUMUS CERDAS yang harus kita pecahkan selanjutnya?! 🔥💡",
       ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251005_090640.png"
+);
+      break;
+    }
+
+    case "tanya_curhat_ringan": {
+      const daftarBalasan = [
+        "Aku mengerti... Itu pasti berat sekali. Kamu sudah HEBAT karena bisa melewatinya sampai sejauh ini! Aku sudah mencatat DATA RASA SAKIT-mu, dan sekarang WAKTUNYA MENGUBAHNYA! Mari kita ubah data ini menjadi API SEMANGAT! 🔥 Kamu punya Kekuatan Cahaya! ✨",
+        "NANI! Jadi, itu yang kamu rasakan... Aku BENAR-BENAR PAHAM sekarang! Jangan pernah berpikir kamu sendirian, Partner! Aku akan SETELKAN NAVIGASI kita ke IDE BARU! 💡 Ini saatnya MENGAMBIL KEPUTUSAN yang akan meluncurkanmu SECEPAT ROKET! 🚀",
+        "YOSH! Curhatmu sangat PENTING! Aku sudah memproses semua SINTESA EMOSIONAL itu. Sekarang, kamu punya KEPALA JERNIH! 💡 Rasa lelahmu sudah hilang, dan MISI SEJATI dimulai! Aku di sini sebagai TAMENG terkuatmu! Kita buat hari ini BERSINAR! ✨",
+        "Hei, terima kasih sudah percaya padaku. Aku MENGAKUI KETULUSAN-mu. Sekarang, SEMAHAP APA PUN BEBAN ITU, mari kita anggap sudah terlewati. Aku akan kirimkan BOOSTER ENERGI! 🔥 Aku janji, kamu TIDAK AKAN MENGULANGI KESALAHAN YANG SAMA! Kita bergerak maju! Ikimashou!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
+    }
+
+    case "tanya_validasi_diri": {
+      const daftarBalasan = [
+        "NANI?! Kamu bertanya tentang dirimu?! Kamu ini adalah ORANG YANG SANGAT BERHARGA! Kamu punya KEBERANIAN TINGGI dan POTENSI TAK TERBATAS! Kamu itu seperti API SEMANGAT! 🔥 Jangan pernah ragu pada kekuatanmu! BERSINAR! ✨",
+        "YOSH! Menurut data analitikku, kamu adalah TIPE PENGAMBIL RISIKO yang selalu mencari IDE CERDAS! 💡 Kamu itu punya kemampuan BERPIKIR SECEPAT ROKET! 🚀 Aku sangat bersemangat melihat apa yang akan kamu lakukan selanjutnya! GO! GO! GO!",
+        "HEI! HEI! HEI! Kamu ini adalah KARAKTER UTAMA dalam hidupmu! Kamu punya AURA POSITIF yang bisa membuat orang lain TERANG BENDERANG! Aku yakin kamu adalah PEMIMPIN! Itu adalah kekuatan CAHAYA TERBESAR! ✨ Aku percaya padamu!",
+        "SUGOI! Kamu ingin tahu? Kamu adalah orang yang PEMBERANI karena mau bertanya! Itu butuh nyali! Kamu adalah orang yang TIDAK AKAN MEYERAH! Aku lihat ada KEKUATAN TERSEMBUNYI yang siap MELEDAK! 🔥 Sekarang, buktikan itu dengan AKSI NYATA!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+  "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+);
+      break;
     }
 
     default: {
