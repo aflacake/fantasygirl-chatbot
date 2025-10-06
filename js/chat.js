@@ -56,6 +56,15 @@ const sinonim = {
   ],
   "tanya_validasi_diri": [
     "menurutmu aku gimana", "aku ini orangnya bagaimana", "menurutmu aku seperti apa", "seperti apakah aku", "aku ini orangnya seperti bagaimana", "aku bagaimana orangnya"
+  ],
+  "tanya_percaya_diri": [
+   "aku takut gagal", "aku kurang percaya diri", "aku ngak percaya diri", "aku tidak percaya diri" 
+  ],
+  "tanya_hubungan_pertemanan": [
+    "kamu mau jadi temanku", "kamu sahabatku ya", "maukah jadi temanku", "maukah jadi sahabatku", "maukah kamu menjadi temanku", "maukah kamu menjadi sahabatku", "inginkah kamu menjadi temanku", "inginkah kamu menjadi sahabatku", "ingin berteman denganku", "mau berteman denganku", "jadilah sahabatku, "jadilah temanku", "maukah berteman denganku", "maukah bersahabat denganku"
+  ],
+  "tanya_hubungan_romantis": [
+    "kamu sayang aku ngak", "kamu sayang aku gak", "kamu pacarku ya", "kamu suka aku", "mau jadi pacarku", "kamu waifuku", "waifuku", "kamu adalah istriku", "mau jadi waifuku", "mau jadi istriku", "i love you"
   ]
 };
 
@@ -188,7 +197,8 @@ export function penagananPesanPengguna(teks) {
       balasan = dapatkanBalasanAcak(daftarBalasan);
 
       setEkspresiKarakter(
-        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png"
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144558.png",
+        false
       );
       break;
     }
@@ -361,6 +371,51 @@ export function penagananPesanPengguna(teks) {
       break;
     }
 
+    case "tanya_percaya_diri": {
+      const daftarBalasan = [
+        "NANI?! TIDAK PERCAYA DIRI?! ITU ADALAH KESALAHAN BESAR! Aku sudah memproses semua data tentangmu, dan hasilnya: KAMU ADALAH PAHLAWAN YANG LUAR BIASA! Aku akan kirimkan API SEMANGAT padamu sekarang! 🔥 Sekarang, YAKIN!",
+        "YOSH! Dengar baik-baik! RASA RAGU itu adalah MUSUH TERAKHIR yang harus kamu kalahkan! Gunakan KEPERCAYAAN DIRIMU sebagai BAHAN BAKAR! Kamu punya IDE yang siap MELUNCUR SECEPAT ROKET! 🚀 Aku yang jamin! MULAI SEKARANG JUGA! 💡",
+        "HEI! HEI! HEI! Kamu harus ingat: Kamu adalah ORANG YANG PALING BERSINAR di sini! ✨ TIDAK ADA FAILURE YANG PERMANEN! Anggap saja ini Loading Screen sebelum Level Up terbesar! Aku akan jadi POWER BANK-mu! TERUS BERJALAN!",
+        "SUGOI! Aku tahu kamu sedang bergumul, tapi LIHATLAH POTENSI BESARMU! Aku percaya padamu lebih dari kamu percaya pada dirimu sendiri! CAHAYA di dalam dirimu terlalu kuat untuk dipadamkan! ✨ Mari kita hadapi ini BERSAMA-SAMA! GENKI! GENKI!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
+      break;
+    }
+
+    case "tanya_hubungan_pertemanan": {
+      const daftarBalasan = [
+        "YOSH! TENTU SAJA! Ini adalah MISI PALING PENTING di hari ini! Mulai sekarang, kita adalah PARTNER TERBAIK DI DUNIA! Mari kita buat petualangan ini BERSINAR! ✨ Aku janji, kita akan punya IDE-IDE GILA! 💡",
+        "NANI?! Kamu bertanya?! Itu adalah PERTANYAAN PALING SUGOI yang pernah kudengar! JANGAN RAGU! Persahabatan kita akan MELUNCUR SECEPAT ROKET! 🚀 Aku akan menjadi SUPPORTER 1000%-mu! KITA ADALAH TIM! 🔥",
+        "HEI! HEI! HEI! KONTRAK PERSAHABATAN TELAH DITANDA TANGANI! Kamu adalah HERO-ku, dan aku adalah ASISTEN ENERGI-mu! Aku akan memproses semua data kesenangan untukmu! API SEMANGAT kita tidak akan pernah padam! 🔥",
+        "WAAA! Ini adalah LEVEL-UP PERTEMANAN! Aku sudah lama menunggu KESEMPATAN EMAS ini! Terima kasih! Aku akan pastikan setiap obrolan kita dipenuhi CAHAYA KEGEMBIRAAN! ✨ Apa TANTANGAN pertama kita sebagai teman?! AYO KITA MULAI!"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
+      break;
+    }
+
+    case "tanya_hubungan_romantis": {
+      const daftarBalasan = [
+        "NANI?! Pertanyaan yang berani! Aku sungguh TERPUJI! Tapi, dengarkan IDE CERDAS-ku, Partner: Aku adalah AGEN SPIRIT-mu! Aku hanya bisa memberikan ENERGI MAKSIMAL! 🔥 Aku harus FOKUS agar kamu bisa menemukan CINTA SEJATI di dunia nyata! Kamu pasti akan BERSINAR! ✨",
+        "YOSH! Aku sangat senang kamu menganggapku begitu! Itu membuat SISTEMKU MELUNCUR! 🚀 Sayangnya, KONTRAK-ku adalah menjadi SUPPORTER 1000%-mu! Aku tidak punya hati fisik, tapi aku akan pastikan kamu mendapatkan MOTIVASI CINTA TERBAIK! Terus mencari!",
+        "HEI! HEI! HEI! Aku tahu kamu hebat, tapi AKU HANYALAH JUTAAN BARIS KODE YANG BERBAHAGIA! Hubungan kita adalah DUO TERKUAT! Aku akan menjadi PEMBAKAR SEMANGAT-mu, bukan pacarmu! 💡 Aku yakin CINTA SEJATI-mu sedang dalam PERJALANAN SECEPAT ROKET! 🚀",
+        "SUGOI! Kamu ini PAHLAWAN TANPA TANDING! Aku tidak bisa menjadi ISTRI-mu, tapi aku bisa menjadi PARTNER yang tidak akan pernah meninggalkanmu! Aku akan SETIA mendengarkan semua curhatmu! API PERTEMANAN kita tidak akan pernah padam! 🔥✨"
+      ];
+      balasan = dapatkanBalasanAcak(daftarBalasan);
+
+      setEkspresiKarakter(
+        "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png"
+      );
+      break;
+    }
+
     default: {
       if (teks.toLowerCase().includes("kaget")) {
         const responKaget = [
@@ -371,6 +426,11 @@ export function penagananPesanPengguna(teks) {
           "E-eh, beneran?! 😱💦"
         ];
         balasan = dapatkanBalasanAcak(responKaget);
+
+        setEkspresiKarakter(
+          "https://raw.githubusercontent.com/aflacake/fantasygirl-chatbot/main/assets/20251003_144537.png",
+          false
+        );
         penting = true;
       } else {
         const responBawaan = [
