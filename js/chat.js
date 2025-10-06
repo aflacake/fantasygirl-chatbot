@@ -82,6 +82,27 @@ function dapatkanBalasanAcak(daftar) {
   return daftar[Math.floor(Math.random() * daftar.length)];
 }
 
+function bisaDihitung(teks) {
+  const pola = /^[0-9+\-*/().^√\s]+$/;
+  return pola.test(teks.replace(/,/g, ".").replace(/akar|pangkat/gi, ""));
+}
+
+function hitungEkspresi(teks) {
+  let ekspresi = teks
+    .toLowerCase()
+    .replace(/x/g, "*")
+    .replace(/×/g, "*")
+    .replace(/÷/g, "/")
+    .replace(/,/g, ".")
+    .replace(/akar\s*dari/g, "Math.sqrt")
+    .replace(/pangkat/g, "**")
+    .replace(/\^/g, "**");
+
+  ekspresi = ekspresi.replace(/Math\.sqrt(\d+)/g, "Math.sqrt($1)");
+
+  return Function(`"use strict"; return (${ekspresi})`)();
+}
+
 export function penagananPesanPengguna(teks) {
   perlihatkanPesanPengguna(teks);
 
@@ -417,7 +438,14 @@ export function penagananPesanPengguna(teks) {
     }
 
     default: {
-      if (teks.toLowerCase().includes("kaget")) {
+      if (bisaDihitung(teks)) {
+        try {
+         const hasil = hitungEkspresi(teks);
+          balasan = `Hasilnya adalah ${hasil} ✨`;
+        } catch (err) {
+          balasan = "Hmm... aku tidak bisa menghitung itu~ 😅";
+        }
+      } else if (teks.toLowerCase().includes("kaget")) {
         const responKaget = [
           "EHHH?! 😱",
           "Serius?! 🤯",
