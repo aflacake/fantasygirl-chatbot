@@ -110,6 +110,15 @@ export function penagananPesanPengguna(teks) {
   let balasan;
   let penting = false;
 
+  function bisaDihitung(teks) {
+    return /^[\d\s+\-*/().]+$/.test(teks.trim());
+  }
+
+  function hitungEkspresi(teks) {
+    const ekspresi = teks.replace(/[^0-9+\-*/().]/g, "");
+    return Function(`"use strict"; return (${ekspresi})`)();
+  }
+
   switch (maksud) {
     case "halo": {
       const daftarBalasan = [
@@ -440,18 +449,35 @@ export function penagananPesanPengguna(teks) {
     default: {
       if (bisaDihitung(teks)) {
         try {
-         const hasil = hitungEkspresi(teks);
-          balasan = `Hasilnya adalah ${hasil} ✨`;
+          const hasil = hitungEkspresi(teks);
+
+          const daftarKalkulator = [
+            `Ehehe~ gampang banget! 💪 Hasilnya itu ${hasil}!`,
+            `Waaah~ aku jenius banget ya?! 😆 Nih hasilnya 👉 ${hasil}!`,
+            `Tadaaa~ 🎉 Jawabannya adalah ${hasil}!`,
+            `Hehe~ aku udah ngitung cepat-cepat~ hasilnya ${hasil}~ 💖`,
+            `Yosh!! 📣 ${hasil}!! Aku menang ngitungnya!!`,
+            `Uwaa~ matematika seru juga ya~ Nih, ${hasil} hasilnya! 🌸`,
+            `Hehe~ senpai, aku dapet ${hasil} loh~! Apakah benar? 😳`,
+            `Tchaa~! ${hasil}! Aku cepet banget kan? Hehehe 😆`,
+            `Huuum~ otakku berasap tapi hasilnya ${hasil}! ☁️`,
+            `Uwah~ selesai juga ngitungnya! ${hasil}~ 🧮✨`
+          ];
+
+          balasan = dapatkanBalasanAcak(daftarKalkulator);
         } catch (err) {
-          balasan = "Hmm... aku tidak bisa menghitung itu~ 😅";
+          balasan = "E-ehh?! 😣 Aku kayaknya salah ngitung deh... ulang lagi ya~";
         }
-      } else if (teks.toLowerCase().includes("kaget")) {
+        break;
+      }
+      if (teks.toLowerCase().includes("kaget")) {
         const responKaget = [
           "EHHH?! 😱",
-          "Serius?! 🤯",
+          "SERIOUSLY?! 😲",
           "Masa sih?! 😳",
-          "Hontou ni?! 😲",
-          "E-eh, beneran?! 😱💦"
+          "Eeeh~ beneran nih?! 😳",
+          "H-Hontou ni?! 😵",
+          "Uwah! Aku juga kaget! 😮"
         ];
         balasan = dapatkanBalasanAcak(responKaget);
 
@@ -462,11 +488,14 @@ export function penagananPesanPengguna(teks) {
         penting = true;
       } else {
         const responBawaan = [
-          "Aku dengar kamu bilang: " + teks,
-          "Hmm... kamu barusan ngomong: " + teks + " ya?",
-          "Ooh, jadi maksudmu \"" + teks + "\"?",
-          "Eh, kamu serius ngomong \"" + teks + "\" barusan?",
-          "Hehe, aku tangkep kok: " + teks
+          `Aku dengar kamu bilang: "${teks}"~ Hehe 💕`,
+          `Hmm~ menarik juga kamu bilang "${teks}" 😄`,
+          `Ehehe~ "${teks}"? Lucu juga kedengarannya 😆`,
+          `Waa~ kamu bilang "${teks}"? So cute~ 💖`,
+          `Hehe~ aku suka cara kamu ngomong "${teks}" 🌸`,
+          `"${teks}" ya? Hee~ kamu emang unik deh 😋`,
+          `Ehh? "${teks}"? Uwaa aku jadi penasaran! 🤔✨`,
+          `Hehehe~ "${teks}" terdengar seru banget~`,
         ];
         balasan = dapatkanBalasanAcak(responBawaan);
       }
