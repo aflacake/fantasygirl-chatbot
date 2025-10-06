@@ -64,7 +64,7 @@ const sinonim = {
     "kamu mau jadi temanku", "kamu sahabatku ya", "maukah jadi temanku", "maukah jadi sahabatku", "maukah kamu menjadi temanku", "maukah kamu menjadi sahabatku", "inginkah kamu menjadi temanku", "inginkah kamu menjadi sahabatku", "ingin berteman denganku", "mau berteman denganku", "jadilah sahabatku", "jadilah temanku", "maukah berteman denganku", "maukah bersahabat denganku"
   ],
   "tanya_hubungan_romantis": [
-    "kamu sayang aku ngak", "kamu sayang aku gak", "kamu pacarku ya", "kamu suka aku", "mau jadi pacarku", "kamu waifuku", "waifuku", "kamu adalah istriku", "mau jadi waifuku", "mau jadi istriku", "i love you"
+    "kamu sayang aku ngak", "kamu sayang aku gak", "kamu pacarku ya", "kamu suka aku", "mau jadi pacarku", "kamu waifuku", "waifuku", "kamu adalah istriku", "mau jadi waifuku", "mau jadi istriku", "i love you", "bolehkah jadi istriku"
   ]
 };
 
