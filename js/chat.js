@@ -119,6 +119,14 @@ export function penagananPesanPengguna(teks) {
     return Function(`"use strict"; return (${ekspresi})`)();
   }
 
+  function simpanNama(nama) {
+    localStorage.setItem("namaPengguna", nama);
+  }
+
+  function ambilNama() {
+    return localStorage.getItem("namaPengguna");
+  }
+
   switch (maksud) {
     case "halo": {
       const daftarBalasan = [
@@ -470,6 +478,58 @@ export function penagananPesanPengguna(teks) {
         }
         break;
       }
+
+      const teksLebihRendah = teks.toLowerCase();
+
+      if (
+        teksLebihRendah.startsWith("nama saya") ||
+        teksLebihRendah.startsWith("namaku") ||
+        teksLebihRendah.startsWith("perkenalkan nama saya")
+      ) {
+        let nama = teks.replace(/(nama saya|namaku|perkenalkan nama saya)/i, "").trim();
+        if (nama) {
+          simpanNama(nama);
+          const balasanNama = [
+            `Hehe~ halo ${nama}! Senang kenalan sama kamu~ 💕`,
+            `Hai ${nama}-san~ aku bakal inget namamu, janji! 🌸`,
+            `Waaah ${nama}? Nama yang imut banget~ 😍`,
+            `Oke ${nama}! Aku catet ya di memori~ ✨`,
+            `Hai hai ${nama}! Sekarang aku inget kamu deh~ 💖`
+          ];
+          balasan = dapatkanBalasanAcak(balasanNama);
+        } else {
+          balasan = "Ehh... kamu belum bilang namanya siapa~ 😳";
+        }
+        break;
+      }
+
+      if (
+        teksLebihRendah.includes("namaku siapa") ||
+        teksLebihRendah.includes("nama saya siapa") ||
+        teksLebihRendah.includes("siapakah namaku")
+      ) {
+        const nama = ambilNama();
+        if (nama) {
+          const balasanIngatNama = [
+            `Hehe~ kamu itu ${nama}~ gimana bisa aku lupa~ 💕`,
+            `Tentu inget dong! Kamu ${nama}-san~ 🌸`,
+            `Uwaa~ itu pertanyaan jebakan ya? Namamu ${nama} kan~ 😆`,
+            `Ehehe~ jelas aku inget! ${nama}~ 💖`,
+            `${nama}! Kamu itu temenku yang ceria banget~ 💫`
+          ];
+          balasan = dapatkanBalasanAcak(balasanIngatNama);
+        } else {
+          const balasanLupaNama = [
+            `E-ehh... aku belum tau namamu 😢`,
+            `Hmm... kamu belum bilang namanya, ya? 😳`,
+            `Waaah aku belum sempat catat namamu 😅`,
+            `Aku belum denger namamu~ bilang lagi dong 🥺`,
+          ];
+          balasan = dapatkanBalasanAcak(balasanLupaNama);
+        }
+        break;
+      }
+
       if (teks.toLowerCase().includes("kaget")) {
         const responKaget = [
           "EHHH?! 😱",
